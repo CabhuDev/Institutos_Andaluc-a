@@ -1,5 +1,6 @@
-from ConexionJuntaPandas import  consulta_direccion_municipio_provincia,consulta_todos_centros
-from CentroEducativo import CentroEducativo
+
+from app.services.ConexionJuntaPandas import  consulta_direccion_municipio_provincia,consulta_todos_centros
+from app.models.CentroEducativo import CentroEducativo
 import pandas as pd
 
 # Dirección de origen proporcionada por el usuario

@@ -1,5 +1,4 @@
-from googleConnect import calcular_distancias, obtener_coordenadas
-from ConexionJuntaPandas import consulta_direccion, consulta_direccion_municipio_provincia
+from app.services.googleConnect import calcular_distancias
 import re
 
 class CentroEducativo:
