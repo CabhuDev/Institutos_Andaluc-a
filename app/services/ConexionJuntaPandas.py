@@ -1,9 +1,14 @@
 import requests
 import pandas as pd
+from dotenv import load_dotenv
+import os
+
+# Cargar las variables de entorno desde el archivo .env
+load_dotenv()
 
 # Datos de la API
-API_URL = "https://www.juntadeandalucia.es/datosabiertos/portal/api/3/action/datastore_search"
-resource_id = '82f92e32-c5ee-4c60-8643-bfb19e130cef'  # Reemplazar con el ID correcto del recurso
+API_URL = 'https://www.juntadeandalucia.es/datosabiertos/portal/api/3/action/datastore_search'
+resource_id = os.getenv("resource_id")
 
 
 

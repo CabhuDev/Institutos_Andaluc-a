@@ -5,9 +5,14 @@
 import googlemaps
 import googlemaps.distance_matrix
 import googlemaps.geocoding
+from dotenv import load_dotenv
+import os
 
+# Cargar las variables de entorno desde el archivo .env
+load_dotenv()
 
-GOOGLE_MAPS_API_KEY = 'AIzaSyCHz6LeaKlnFSES-7x5wolAcmT2VxuHtU8'
+GOOGLE_MAPS_API_KEY = os.getenv("GOOGLE_MAPS_API_KEY")
+
 
 # Función para obtener las coordenadas de una dirección proporcionada por el usuario
 def obtener_coordenadas(direccion_usuario: str) -> tuple:
