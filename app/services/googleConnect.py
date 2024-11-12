@@ -74,9 +74,10 @@ def calcular_distancias(direccion_origen: str, direccion_destino: str) -> dict:
     return {}
 
 
-"""#-- PRUEBA DE LAS FUNCIONES --#
-direccion_origen = "Calle Costa Rica 49, 18194, Churriana de la Vega, Granada"
-direccion_destino = " C/ La Salud, 6     14100               La Carlota     Córdoba"
+#-- PRUEBA DE LAS FUNCIONES --#
+
+"""direccion_origen = "Calle Costa Rica 49, 18194, Churriana de la Vega, Granada"
+direccion_destino = " Cordoba,14700651C, I.E.S. Ricardo Delgado Vizcaíno"
 coordenadas_origen = obtener_coordenadas(direccion_origen)
 coordenadas_destino = obtener_coordenadas(direccion_destino)
 print("------------------")
@@ -90,4 +91,5 @@ destino = f"{lat_test},{lng_test}"
 print (destino)
 
 print("------------------")
-print(calcular_distancias(direccion_origen,direccion_destino))"""
+print(calcular_distancias(direccion_origen,direccion_destino))
+"""
